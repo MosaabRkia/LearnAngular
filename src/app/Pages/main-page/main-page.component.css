@@ -1,0 +1,8 @@
+.header {
+  height: 70px;
+}
+
+.body,
+.header {
+  min-width: 375px;
+}

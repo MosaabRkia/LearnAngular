@@ -1,0 +1,28 @@
+<div class="container">
+    <button routerLink="/main" onclick="console.log('clicked')" id="backArrow">
+        <img alt="cartbackarrow" id="cartBackArrow"
+            src="https://cdn3.iconfinder.com/data/icons/arrow-outline-8/32/left-256.png">
+    </button>
+    <h1>cart</h1>
+    <div *ngIf="getTotal() != 0">
+        <app-cart-product-card *ngFor='let product of cartProducts index as i;' [product]="product">
+        </app-cart-product-card>
+    </div>
+
+    <div *ngIf="getTotal()===0">
+        <h1>empty</h1>
+    </div>
+    <!-- 
+    <ng-template #fill >
+    
+    </ng-template>
+    <ng-template #empty>
+       
+    </ng-template> -->
+
+    <h3 id="totalPriceH3">total : {{getTotal()}}$</h3>
+    <button [disabled]="getTotal()===0" (click)="buyAll()" id="buyButtonCart">
+        <h3>buy now</h3>
+    </button>
+    {{message}}
+</div>

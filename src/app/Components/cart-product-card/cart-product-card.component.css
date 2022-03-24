@@ -1,0 +1,26 @@
+.containerCartProduct{
+    width: 90%;
+    border: 1px solid black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:15px;
+    margin: auto ;
+}
+.containerCartProduct>h3{
+    margin: 5px;
+}
+#removeButton{
+    width:50px;
+    height:50px;
+    border-radius:15px;
+    margin:5px;
+}
+#removeIcon{
+    width:100%; 
+}
+#removeWord{
+    position:absolute;
+    font-size:10px;
+    top:11%;
+}

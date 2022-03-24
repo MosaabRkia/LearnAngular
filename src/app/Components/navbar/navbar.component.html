@@ -1,0 +1,14 @@
+<script>
+    const consolelogcart = () => {
+        console.log("cartButton")
+    }
+</script>
+<div id="navBarContainer">
+    <h1 id="companyName">WiseInfo</h1>
+    <button routerLink="/cart" onclick="console.log('clicked')" id="buttonCart">
+        <h3 id="quantityInCart">{{getCartList()}}</h3>
+        <img alt="cartLogo" id="cartImage"
+            src="https://cdn4.iconfinder.com/data/icons/shopping-21/64/shopping-01-256.png">
+    </button>
+
+</div>

@@ -1,0 +1,11 @@
+#productsList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+#productsList > * {
+  flex: 1 1 160px;
+}

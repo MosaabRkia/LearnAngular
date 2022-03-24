@@ -1,0 +1,28 @@
+.descriptionOfProductCard,
+.nameOfProductCard {
+  max-width: 90%;
+}
+
+.productCard {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  min-width: 375px;
+  max-width: 450px;
+}
+
+#addToCartButton {
+  width: 90%;
+  margin: auto;
+  border-radius: 15px;
+  background-color: rgb(255, 208, 0);
+}
+
+.priceParagraph {
+  font-weight: bold;
+  font-size: 25px;
+  font-style: italic;
+}

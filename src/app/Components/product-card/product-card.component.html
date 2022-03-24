@@ -1,0 +1,20 @@
+<div class="productCard">
+    <h1 class="nameOfProductCard">
+        {{product.name}}
+    </h1>
+    <p class="descriptionOfProductCard">
+        {{product.description}}
+    </p>
+    <p class="priceParagraph">
+        price : {{product.price}} $
+    </p>
+    <button (click)="AddToCart(product)" id="addToCartButton">
+        <h3>Add To Cart</h3>
+    </button>
+    <!-- <button (click)="clearCartList()">
+        <h1>remove</h1>
+    </button>
+    <button (click)="getCartList()">
+        <h1>get</h1>
+    </button> -->
+</div>
